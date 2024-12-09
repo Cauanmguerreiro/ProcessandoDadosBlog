@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagens de programação</title>
+    <style>
+        /* Geral */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: justify;
+        }
+
+        header {
+            color: #ffffff;
+            background-color: #6C2815;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        header .logo img {
+            max-height: 80px;
+            width: auto;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Página da matéria */
+        main article {
+        max-width: 800px;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        text-align: justify;
+        }
+
+        main article h2 {
+            font-size: 32px;
+            color: #DA421E;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        main article p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        main article img {
+            width: 80%; /* Ajuste para aumentar a imagem */
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            
+        }
+
+        main article a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #E39E2B;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        main article a:hover {
+            background-color: #C1771D;
+        }
+
+        /* Seção de Autores */
+        .autores {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .autores h2 {
+            font-size: 28px;
+            color: #6C2815;
+            margin-bottom: 15px;
+        }
+
+        .autores p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .autores .autor {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .autores img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid #6C2815;
+        }
+
+        .autores span {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .autores .descricao {
+            font-size: 14px;
+            color: #666;
+            max-width: 600px;
+            margin-left: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #6C2815;
+            color: white;
+            padding: 10px 0;
+        }
+        @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            height: auto;
+            text-align: center;
+        }
+
+        header .logo img {
+            max-height: 60px;
+        }
+
+        header nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        main article {
+            padding: 15px;
+        }
+
+        .autores .autor {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .autores img {
+            margin-bottom: 10px;
+        }
+
+        .autores .descricao {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        header nav a {
+            font-size: 14px;
+        }
+
+        main article h1 {
+            font-size: 24px;
+        }
+
+        main article p {
+            font-size: 16px;
+        }
+
+        footer {
+            font-size: 14px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imgs/logo.png" alt="Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#sobre">Sobre</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h2>Introdução</h2>
+            <img src="images/MINIATURA YT (3).png" alt="ytba">
+            <p>Já imaginou como sites, aplicativos e até jogos são criados? Tudo isso é possível graças às linguagens de programação. Elas permitem que programadores se comuniquem com computadores, transformando ideias em realidade no mundo digital.</p>
+        </article>
+        
+        <article>
+            <h2>Definição</h2>
+            <p>As linguagens de programação são sistemas de comunicação usados para criar softwares. Elas consistem em conjuntos de regras e comandos que facilitam a interação com o computador, traduzindo ações humanas para a "linguagem" das máquinas.</p>
+        </article>
+        
+        <article>
+            <h2>Tipos de Linguagens</h2>
+            <p>Existem dois grandes grupos de linguagens de programação:</p>
+            <ul>
+                <li><strong>Linguagens de Baixo Nível:</strong> Mais próximas do código de máquina, como Assembly, ideais para interação direta com o hardware.</li>
+                <li><strong>Linguagens de Alto Nível:</strong> Mais intuitivas para humanos, como Python e JavaScript, facilitam o desenvolvimento de softwares modernos.</li>
+            </ul>
+        </article>
+        
+        <article>
+            <h2>Linguagens Populares e Suas Aplicações</h2>
+            <p>As linguagens de programação têm aplicações específicas:</p>
+            <ul>
+                <li><strong>Python:</strong> Ideal para inteligência artificial, automação e análise de dados.</li>
+                <li><strong>JavaScript:</strong> Usado no desenvolvimento web para criar interfaces dinâmicas.</li>
+                <li><strong>C++:</strong> Popular no desenvolvimento de jogos e sistemas complexos.</li>
+            </ul>
+        </article>
+        
+        <article>
+            <h2>Como Escolher uma Linguagem?</h2>
+            <p>A escolha da linguagem ideal depende do seu objetivo. Python e JavaScript são ótimas opções para iniciantes devido à sua simplicidade e versatilidade. O importante é começar e praticar consistentemente!</p>
+        </article>
+        
+        <article>
+            <h2>Conclusão</h2>
+            <p>As linguagens de programação são essenciais para o mundo digital, conectando a criatividade humana com a capacidade das máquinas. Dominar uma linguagem é o primeiro passo para criar soluções inovadoras e impactar o futuro.</p>
+        </article>
+        
+        <a href="index.html">Voltar para a página inicial</a>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Processando

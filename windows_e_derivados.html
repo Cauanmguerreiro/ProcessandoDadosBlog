@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Windows e Suas Versões Derivadas: História, Funcionalidades e Transformações</title>
+    <style>
+        /* Geral */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            color: #ffffff;
+            background-color: #6C2815;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        header .logo img {
+            max-height: 80px;
+            width: auto;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Página da matéria */
+        main article {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        main article h1 {
+            font-size: 32px;
+            color: #DA421E;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        main article p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        main article img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        main article a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #E39E2B;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        main article a:hover {
+            background-color: #C1771D;
+        }
+
+        /* Seção de Autores */
+        .autores {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .autores h2 {
+            font-size: 28px;
+            color: #6C2815;
+            margin-bottom: 15px;
+        }
+
+        .autores p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .autores .autor {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .autores img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid #6C2815;
+        }
+
+        .autores span {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .autores .descricao {
+            font-size: 14px;
+            color: #666;
+            max-width: 600px;
+            margin-left: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #6C2815;
+            color: white;
+            padding: 10px 0;
+        }
+        @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            height: auto;
+            text-align: center;
+        }
+
+        header .logo img {
+            max-height: 60px;
+        }
+
+        header nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        main article {
+            padding: 15px;
+        }
+
+        .autores .autor {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .autores img {
+            margin-bottom: 10px;
+        }
+
+        .autores .descricao {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        header nav a {
+            font-size: 14px;
+        }
+
+        main article h1 {
+            font-size: 24px;
+        }
+
+        main article p {
+            font-size: 16px;
+        }
+
+        footer {
+            font-size: 14px;
+        }}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imgs/logo.png" alt="Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#sobre">Sobre</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h1>Evolução do Sistema Operacional Windows</h1>
+            <img src="imgs/windows_derivados.png" alt="Python Banner">
+            
+            <section>
+                <h2>Primeiras Versões</h2>
+                <p>As primeiras versões do Windows, como o Windows 1.0 e o Windows 2.0, só funcionavam em partições formatadas com o sistema de arquivos FAT, sendo o FAT16 o mais usado. O Windows 3.x já era compatível com o FAT32, mas exigia a instalação do MS-DOS 7.10 antes.</p>
+            </section>
+        
+            <section>
+                <h2>Windows 95</h2>
+                <p>Lançado em 24 de agosto de 1995, o Windows 95 trouxe muitas mudanças em comparação com as versões anteriores. A interface foi reformulada, com a adição do Menu Iniciar e da barra de tarefas. Além disso, o sistema não precisava mais do MS-DOS para funcionar. As limitações de memória do Windows 3.x foram quase eliminadas, e o multitarefa foi melhorado. O sistema usava o FAT-16 (VFAT), que permitia nomes de arquivos com até 255 caracteres.</p>
+            </section>
+        
+            <section>
+                <h2>Windows 98</h2>
+                <p>Lançado em 25 de junho de 1998, o Windows 98 corrigiu vários problemas do Windows 95, como a integração com a Internet. A interface gráfica e o suporte a USB e a múltiplos monitores também melhoraram. No entanto, devido ao aumento de funcionalidades, o sistema ficou mais lento e instável.</p>
+            </section>
+        
+            <section>
+                <h2>Windows 2000</h2>
+                <p>Lançado em 17 de fevereiro de 2000, o Windows 2000 teve problemas de segurança graves, sendo atacado por worms como Code Red e Blaster, que afetaram milhões de computadores. Esses ataques causaram grandes períodos de inatividade e altos custos de reparo.</p>
+            </section>
+        
+            <section>
+                <h2>Windows ME</h2>
+                <p>Em 14 de setembro de 2000, foi lançado o Windows ME, que, junto com o Windows 2000, foi criticado por ser lento e instável. Ambos foram rapidamente substituídos pelo Windows XP, lançado em 25 de outubro de 2001.</p>
+            </section>
+        
+            <section>
+                <h2>Windows XP</h2>
+                <p>O Windows XP foi o primeiro a oferecer suporte para sistemas de 64 bits e foi desenvolvido com uma nova arquitetura e núcleo. Foi sucedido pelo Windows Vista, que trouxe a interface gráfica Windows Aero.</p>
+            </section>
+        
+            <section>
+                <h2>Windows 7</h2>
+                <p>Lançado em 22 de outubro de 2009, o Windows 7 foi uma versão mais eficiente e prática, com o objetivo de ser mais simples de usar e totalmente compatível com os aplicativos e hardwares que já eram compatíveis com o Windows Vista.</p>
+            </section>
+        
+            <section>
+                <h2>Windows 8</h2>
+                <p>Lançado em 26 de outubro de 2012, o Windows 8 trouxe grandes mudanças para melhorar a experiência em tablets. A nova interface Metro UI foi otimizada para telas sensíveis ao toque e incluiu a Tela Iniciar, com aplicativos e conteúdos atualizados. Também foi criada a Windows Store, para baixar novos softwares.</p>
+            </section>
+        
+            <section>
+                <h2>Windows 8.1</h2>
+                <p>Lançado em 17 de outubro de 2013, o Windows 8.1 foi uma melhoria do Windows 8, trazendo uma Tela Iniciar mais personalizável, novos aplicativos, integração com OneDrive e melhorias na compatibilidade com displays de alta resolução, Wi-Fi Direct e impressoras 3D.</p>
+            </section>
+        
+            <section>
+                <h2>Windows 10</h2>
+                <p>O Windows 10, lançado em 29 de julho de 2015, trouxe mudanças no design em relação ao Windows 8.1. Novas Live Tiles foram adicionadas ao Menu Iniciar, permitindo redimensioná-las. O sistema passou a ser mais integrado e fácil de usar, com melhorias em diversos recursos.</p>
+            </section>
+        
+            <section>
+                <h2>Windows 11</h2>
+                <p>O Windows 11, lançado em 5 de outubro de 2021, trouxe o redesign do menu iniciar e a nova tela de widgets. Este último foi muito criticado devido à falta de funcionalidades em relação ao seu antecessor.</p>
+            </section>
+        
+            <section>
+                <h2>Funcionalidades Windows</h2>
+                <p>O sistema operacional Windows possui uma vasta variedade de funcionalidades que o tornam ideal para o local de trabalho, facilitando a produtividade e a colaboração. Algumas dessas funcionalidades incluem:</p>
+                <ul>
+                    <li><strong>Integração com Microsoft Office:</strong> O Windows é otimizado para executar aplicativos do Microsoft Office, como Word, Excel e PowerPoint.</li>
+                    <li><strong>Suporte a Multitarefa:</strong> Permite que os usuários executem vários aplicativos simultaneamente.</li>
+                    <li><strong>Virtualização:</strong> Funcionalidades que permitem executar máquinas virtuais diretamente no Windows.</li>
+                    <li><strong>Segurança Avançada:</strong> O Windows possui diversas funcionalidades de segurança, incluindo o Windows Defender.</li>
+                    <li><strong>Armazenamento em Nuvem com OneDrive:</strong> Integração com o OneDrive para armazenar arquivos na nuvem.</li>
+                    <li><strong>Acesso Remoto:</strong> Funcionalidades como a área de trabalho remota permitem o acesso ao computador de qualquer lugar.</li>
+                    <li><strong>Personalização da Interface:</strong> O Windows permite que os usuários personalizem a interface do sistema de acordo com suas necessidades.</li>
+                </ul>
+            </section>
+        
+            <section>
+                <h2>Versões Derivadas</h2>
+                <p>O Windows evoluiu significativamente desde sua primeira versão, com várias edições para diferentes públicos. As versões derivadas incluem:</p>
+        
+                <h3>Windows para Consumidores Finais</h3>
+                <p>Inclui versões como o Windows Home, destinada aos usuários domésticos, e o Windows Starter, que é uma versão mais simples para mercados emergentes.</p>
+        
+                <h3>Versões Corporativas</h3>
+                <p>Versões como o Windows Professional e o Windows Enterprise foram desenvolvidas para empresas, com maior segurança e suporte a domínios e máquinas virtuais.</p>
+        
+                <h3>Versões Técnicas e Especializadas</h3>
+                <p>O Windows Embedded foi projetado para sistemas embarcados e dispositivos específicos, enquanto o Windows IoT foca na Internet das Coisas.</p>
+            </section>
+        
+            <section>
+                <h2>Impacto e Relevância</h2>
+                <p>O impacto do Windows no mercado de sistemas operacionais é indiscutível, marcando uma revolução na inovação tecnológica e na usabilidade. O Windows se tornou a plataforma básica para a popularização dos computadores pessoais, especialmente após o lançamento do Windows 95, que trouxe uma interface gráfica acessível.</p>
+            </section>
+        
+            <section>
+                <h2>Conclusão</h2>
+                <p>A evolução do Sistema Operacional Windows reflete tanto os avanços tecnológicos da Microsoft quanto a transformação da computação pessoal e corporativa. O Windows se adaptou às novas demandas do mercado, incluindo segurança, conectividade e compatibilidade com dispositivos variados. Sua popularidade continua a crescer, consolidando-o como uma plataforma essencial no cenário digital atual.</p>
+            </section>
+        
+            <a href="index.html">Voltar para a página inicial</a>
+        </article>
+        
+        
+
+        <section class="autores">
+            <h2>Autores</h2>
+            <div class="autor">
+                <img src="imgs/autor1.jpg" alt="Foto do Autor Guilherme Serrano">
+                <span>Guilherme Serrano¹</span>
+                <div class="descricao">
+                    Desenvolvedor de software com foco em soluções para grandes empresas. Atualmente, trabalha com projetos de integração de sistemas e desenvolvimento de ferramentas para otimização de processos corporativos.
+                </div>
+            </div>
+            <div class="autor">
+                <img src="imgs/autor2.jpg" alt="Foto do Autor Guilherme Borba">
+                <span>Guilherme Borba²</span>
+                <div class="descricao">
+                    Engenheiro de TI, especializado em infraestrutura de redes e segurança digital. Com experiência em ambientes corporativos de grande porte, busca soluções inovadoras para proteção de dados e comunicação eficiente.
+                </div>
+            </div>
+            <div class="autor">
+                <img src="imgs/portifolioimg.png" alt="Foto do Autor Cauan Guerreiro">
+                <span>Cauan Guerreiro¹</span>
+                <div class="descricao">
+                    Estudante de Ciência da Computação, apaixonado por desenvolvimento web e automação de processos. Está sempre em busca de aprender novas tecnologias e aplicar suas habilidades em projetos reais.
+                </div>
+            </div>
+            <div class="autor">
+                <img src="imgs/autor4.jpg" alt="Foto do Autor Vitor Freitas">
+                <span>Vitor Freitas¹</span>
+                <div class="descricao">
+                    Técnico em informática, com experiência em redes de computadores e manutenção de sistemas. Ele é entusiasta de tecnologias emergentes e busca expandir seus conhecimentos em desenvolvimento de software.
+                </div>
+            </div>
+            <div class="autor">
+                <img src="imgs/autor5.jpg" alt="Foto do Autor Nicolas Dimer">
+                <span>Nicolas Dimer</span>
+                <div class="descricao">
+                    Profissional de TI com foco em análise de dados e aprendizado de máquina. Nicolas possui uma vasta experiência em transformar dados brutos em insights valiosos para negócios e organizações.
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Processando Dados. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

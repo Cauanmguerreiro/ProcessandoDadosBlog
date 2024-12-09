@@ -1,0 +1,246 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    color: #ffffff;
+    background-color: #6C2815;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+header .logo img {
+    max-height: 80px;
+    width: auto;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+#posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os posts horizontalmente */
+    justify-content: center; /* Centraliza os posts verticalmente (se houver mais espaço na tela) */
+    text-align: center; /* Centraliza o texto dentro dos posts */
+    padding: 20px;
+    gap: 20px; /* Espaço entre os posts */
+}
+
+.post {
+    max-width: 600px; /* Limita a largura máxima de cada post */
+    width: 100%; /* Faz o post ocupar 100% da largura até o limite */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+#posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os posts horizontalmente */
+    justify-content: center; /* Centraliza os posts verticalmente (se houver mais espaço na tela) */
+    text-align: center; /* Centraliza o texto dentro dos posts */
+    padding: 20px;
+    gap: 20px; /* Espaço entre os posts */
+}
+
+.post {
+    max-width: 600px; /* Limita a largura máxima de cada post */
+    width: 100%; /* Faz o post ocupar 100% da largura até o limite */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.post h2{
+    font-weight: bold;
+    color: #DA421E; /* Ajuste da cor do título */
+}
+
+.post h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.button {
+    background-color: #E39E2B;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #C1771D;
+}
+
+
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    height: 100vh; /* Ajusta a altura para preencher a tela */
+    font-weight: bold;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#sobre h2, #sobre p {
+    margin: 0; /* Remove margens para garantir centralização precisa */
+}
+
+#sobre span{
+    color: #DA421E;
+}
+
+#contato h2 {
+    font-size: 28px;
+    color: #6C2815;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #DA421E; /* Cor de borda ao focar nos campos */
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+    resize: none; /* Impede o redimensionamento da área de texto */
+}
+
+button {
+    background-color: #E39E2B;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #C1771D;
+}
+
+button:active {
+    background-color: #9a5e16;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+footer {
+    text-align: center;
+    background-color: #6C2815;
+    color: white;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    header .logo img {
+        max-height: 60px;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    main article {
+        padding: 15px;
+    }
+
+    .autores .autor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .autores img {
+        margin-bottom: 10px;
+    }
+
+    .autores .descricao {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav a {
+        font-size: 14px;
+    }
+
+    main article h1 {
+        font-size: 24px;
+    }
+
+    main article p {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
